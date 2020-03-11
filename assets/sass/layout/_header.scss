@@ -88,14 +88,14 @@
 
     p {
         text-transform: uppercase;
-        color: #003B5C;
+        color: $primary-text;
         font-family: 'Playfair Display', serif;
         font-weight: 600;
         font-size: 12px;
         letter-spacing: 0.5px;
 
         span {
-            color: #C3C3C3;
+            color: $light-text;
             text-transform: lowercase;
             font-weight: 500;
         }

@@ -1,0 +1,107 @@
+.related-posts {
+    clear: both;
+    margin: 60px 0px;
+    padding: 20px;
+
+    .title-related {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .title-related:after {
+        content: "";
+        position: absolute;
+        width: 40%;
+        border-top: 4px double $border;
+        height: 20px;
+        top: 50%;
+        right: 0%;
+        z-index: -1;
+    }
+
+    .title-related:before {
+        content: "";
+        position: absolute;
+        width: 40%;
+        border-top: 4px double $border;
+        height: 20px;
+        top: 50%;
+        left: 0%;
+        z-index: -1;
+    }
+
+    .title-related p {
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 32px;
+        font-family: 'Playfair Display', serif;
+        color: $primary-text;
+        text-transform: uppercase;
+        text-align: center;
+        display: table;
+        margin: 0px auto 20px;
+        border: 1px solid $border;
+        padding: 5px 20px;
+        box-shadow: 3px 3px 0px $border;
+        position: relative;
+        background: $white;
+    }
+
+    .related-posts--wrapper {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+    }
+
+    .post-item {
+        width: 32%
+    }
+
+}
+
+
+
+.related-posts .related-posts .post-item .cat {
+    margin-top: 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px
+}
+
+.related-posts .post-item .cat p {
+    color: $primary-text;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px
+}
+
+.related-posts .post-item .cat p span {
+    color: $light-text;
+    text-transform: lowercase
+}
+
+.related-posts .post-item img {
+    width: 100%
+}
+
+.related-posts .post-item h3 {
+    font-size: 22px;
+    color: $primary-text;
+    line-height: 31px;
+    margin: 10px 0px
+}
+
+.related-posts .post-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #E74832;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500
+}
+
+.related-posts .post-item a svg {
+    margin-left: 10px;
+    vertical-align: middle
+}
