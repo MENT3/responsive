@@ -1,6 +1,10 @@
 .container-article {
     width: 1060px;
     margin: 0 auto;
+
+    @media (max-width: $lg) {
+        width: 90%;
+    }
 }
 
 .page-article {
@@ -9,6 +13,10 @@
         text-align: center;
         margin-top: 70px;
 
+        @media (max-width: $sm) {
+            margin-top: 40px;
+        }
+
         .single-title {
             max-width: 630px;
             margin: 0 auto;
@@ -16,7 +24,14 @@
             h1 {
                 font-size: 50px;
                 color: $primary-text;
-                line-height: 60px
+                line-height: 60px;
+
+                @media (max-width: $sm) {
+                    font-size: 2.5rem;
+                    width: 95%;
+                    margin: 0 auto;
+                    line-height: 50px;
+                }
             }
         }
 
@@ -28,7 +43,16 @@
                 color: $secondary-text;
                 font-size: 22px;
                 margin: 25px 0px;
-                line-height: 31px
+                line-height: 31px;
+
+                @media (max-width: $sm) {
+                    color: #5D534F;
+                    font-size: 15px;
+                    margin: 25px auto;
+                    width: 83%;
+                    line-height: 20px;
+                    text-align: justify;
+                }
             }
 
         }
@@ -67,7 +91,12 @@
         -webkit-justify-content: space-between;
         justify-content: space-between;
         -webkit-align-items: center;
-        align-items: center
+        align-items: center;
+
+        @media (max-width: $sm) {
+            -webkit-justify-content: space-around;
+            justify-content: space-around;
+        }
     }
 
 
@@ -91,6 +120,11 @@
         margin-bottom: 50px;
         width: 65%;
         float: right;
+
+        @media (max-width: $sm) {
+            width: 100%;
+            float: none;
+        }
 
         h2 {
             color: $primary-text;
@@ -125,7 +159,11 @@
 .page-article .article-meta.article-footer {
     max-width: 100%;
     width: 65%;
-    float: right
+    float: right;
+
+    @media (max-width: $sm) {
+        float: none;
+    }
 }
 
 .page-article .article-meta {
@@ -196,6 +234,10 @@
                 margin: 0 7px;
             }
         }
+
+        @media (max-width: $sm) {
+            display: none;
+        }
     }
 }
 
@@ -209,6 +251,8 @@
     -webkit-align-items: center;
     align-items: center;
     margin-bottom: 50px;
+    flex-wrap: wrap;
+
 
     .article-date {
         width: 200px;
@@ -237,10 +281,28 @@
             text-transform: uppercase;
             font-size: 36px;
         }
+
+        @media (max-width: $sm) {
+            width: 100%;
+            display: inline-flex;
+            margin-bottom: 20px;
+
+            .day,
+            .day-number,
+            .month {
+                font-size: 25px;
+            }
+
+            .day-number {
+                padding: 0 8px;
+            }
+        }
+
     }
 
     .article-title--hat {
         width: 65%;
+        min-width: 300px;
 
         h2 {
             font-size: 22px;
@@ -304,6 +366,7 @@
     padding-top: 25px;
     position: relative;
 
+
     &:before {
         content: "";
         top: 0px;
@@ -316,6 +379,11 @@
     p {
         color: $primary-text;
         font-size: 36px;
-        line-height: 45px
+        line-height: 45px;
+
+        @media (max-width: $sm) {
+            font-size: 20px;
+            line-height: 23px;
+        }
     }
 }

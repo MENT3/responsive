@@ -526,6 +526,12 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+@media (max-width: 767.98px) {
+  .container-fluid {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
 
 .header-main {
   background: #ffffff;
@@ -535,6 +541,11 @@ body {
 }
 .header-main.fixed {
   right: 10%;
+}
+@media (max-width: 767.98px) {
+  .header-main {
+    display: none;
+  }
 }
 .header-right-part {
   right: 10%;
@@ -566,6 +577,11 @@ body {
 .header-single--title {
   position: relative;
   margin-left: 50px;
+}
+@media (max-width: 999.98px) {
+  .header-single--title {
+    display: none;
+  }
 }
 .header-single--title:before {
   content: "|";
@@ -624,15 +640,30 @@ body {
   text-transform: lowercase;
   font-weight: 500;
 }
+@media (max-width: 999.98px) {
+  .header-category {
+    display: none;
+  }
+}
 
 .container-article {
   width: 1060px;
   margin: 0 auto;
 }
+@media (max-width: 1100.98px) {
+  .container-article {
+    width: 90%;
+  }
+}
 
 .page-article .article-header {
   text-align: center;
   margin-top: 70px;
+}
+@media (max-width: 767.98px) {
+  .page-article .article-header {
+    margin-top: 40px;
+  }
 }
 .page-article .article-header .single-title {
   max-width: 630px;
@@ -643,6 +674,14 @@ body {
   color: #003B5C;
   line-height: 60px;
 }
+@media (max-width: 767.98px) {
+  .page-article .article-header .single-title h1 {
+    font-size: 2.5rem;
+    width: 95%;
+    margin: 0 auto;
+    line-height: 50px;
+  }
+}
 .page-article .article-header .single-subtitle {
   max-width: 630px;
   margin: 0 auto;
@@ -652,6 +691,16 @@ body {
   font-size: 22px;
   margin: 25px 0px;
   line-height: 31px;
+}
+@media (max-width: 767.98px) {
+  .page-article .article-header .single-subtitle p {
+    color: #5D534F;
+    font-size: 15px;
+    margin: 25px auto;
+    width: 83%;
+    line-height: 20px;
+    text-align: justify;
+  }
 }
 .page-article .single-header--cat {
   margin-bottom: 50px;
@@ -683,6 +732,12 @@ body {
   -webkit-align-items: center;
   align-items: center;
 }
+@media (max-width: 767.98px) {
+  .page-article .article-meta {
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  }
+}
 .page-article .article-thumbnail {
   margin-bottom: 50px;
 }
@@ -700,6 +755,12 @@ body {
   margin-bottom: 50px;
   width: 65%;
   float: right;
+}
+@media (max-width: 767.98px) {
+  .page-article .article-paragraph {
+    width: 100%;
+    float: none;
+  }
 }
 .page-article .article-paragraph h2 {
   color: #003B5C;
@@ -729,6 +790,11 @@ body {
   max-width: 100%;
   width: 65%;
   float: right;
+}
+@media (max-width: 767.98px) {
+  .page-article .article-meta.article-footer {
+    float: none;
+  }
 }
 
 .page-article .article-meta .meta-author .author-thumb {
@@ -787,6 +853,11 @@ body {
 .page-article .article-meta .social-share--links ul li {
   margin: 0 7px;
 }
+@media (max-width: 767.98px) {
+  .page-article .article-meta .social-share--links {
+    display: none;
+  }
+}
 
 .page-article .article-head {
   display: -webkit-flex;
@@ -796,6 +867,7 @@ body {
   -webkit-align-items: center;
   align-items: center;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 .page-article .article-head .article-date {
   width: 200px;
@@ -822,8 +894,24 @@ body {
   text-transform: uppercase;
   font-size: 36px;
 }
+@media (max-width: 767.98px) {
+  .page-article .article-head .article-date {
+    width: 100%;
+    display: inline-flex;
+    margin-bottom: 20px;
+  }
+  .page-article .article-head .article-date .day,
+.page-article .article-head .article-date .day-number,
+.page-article .article-head .article-date .month {
+    font-size: 25px;
+  }
+  .page-article .article-head .article-date .day-number {
+    padding: 0 8px;
+  }
+}
 .page-article .article-head .article-title--hat {
   width: 65%;
+  min-width: 300px;
 }
 .page-article .article-head .article-title--hat h2 {
   font-size: 22px;
@@ -888,6 +976,12 @@ body {
   color: #003B5C;
   font-size: 36px;
   line-height: 45px;
+}
+@media (max-width: 767.98px) {
+  .page-article .article-quote p {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }
 
 .related-posts {

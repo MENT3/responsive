@@ -8,6 +8,10 @@
         &.fixed {
             right: 10%;
         }
+
+        @media (max-width: $sm) {
+            display: none;
+        }
     }
 
     &-right-part {
@@ -44,7 +48,12 @@
 
     &-single--title {
         position: relative;
-        margin-left: 50px
+        margin-left: 50px;
+
+        @media (max-width: $md) {
+            display: none;
+        }
+
     }
 
     &-single--title:before {
@@ -99,5 +108,9 @@
             text-transform: lowercase;
             font-weight: 500;
         }
+    }
+
+    @media (max-width: $md) {
+        display: none;
     }
 }
