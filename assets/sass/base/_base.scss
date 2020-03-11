@@ -2,3 +2,17 @@ body {
     font-family: 'Playfair Display', serif;
     overflow-x: hidden
 }
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.container-fluid {
+    padding-right: 45px;
+    padding-left: 45px;
+    margin-right: auto;
+    margin-left: auto
+}
