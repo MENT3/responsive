@@ -9,6 +9,10 @@
 // Base
 @import './base/base';
 
+// Theme
+@import './theme/shareButton';
+@import './theme/sharePopup';
+
 // Layout
 @import './layout/header';
 @import './layout/article';
