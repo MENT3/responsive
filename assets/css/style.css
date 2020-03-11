@@ -564,6 +564,11 @@ body {
   padding: 20%;
   z-index: 998;
 }
+@media (min-width: 999.98px) {
+  .social-popup {
+    padding-top: 10%;
+  }
+}
 .social-popup .social-logo {
   width: 100%;
 }

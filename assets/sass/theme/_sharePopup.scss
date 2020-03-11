@@ -8,12 +8,17 @@
     padding: 20%;
     z-index: 998;
 
+    @media (min-width: $md) {
+        padding-top: 10%;
+    }
+
     .social-logo {
         width: 100%;
 
         img {
             width: 60%;
             margin: 30px auto;
+
         }
     }
 
